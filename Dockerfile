@@ -29,6 +29,7 @@ COPY --from=build /usr/local/bin/minimal /usr/local/bin/
 
 RUN mkdir -p /app
 
+
 WORKDIR /app
 
 COPY ./deploy/app.sh /app/app.sh
